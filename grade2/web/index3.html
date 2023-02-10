@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+           body{
+               background-image: url("tech.jpg");
+               color:white;
+               background-repeat: no-repeat; 
+               background-size:  cover;
+            }
+            h2{
+                font-size:30px;
+            }
+            form{
+                text-align:center;
+                border: 2.5px solid white;
+                color: yellow;
+                background-color:#00042f;
+                position: absolute;
+                margin-left:190px;
+                margin-top:15px;
+                width:550px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+                border-radius: 30px;
+            }
+             input{
+                border-radius: 10px;
+                padding: 5px;
+                text-align: center;
+                width:250px;
+                background: transparent;
+                border:2.5px solid darkblue;
+                color:yellow;
+            }
+             input:hover{
+                width:260px;
+                border:2.5px solid green;
+            }
+            input:focus{
+                width:300px;
+                border:4px solid green;
+            }
+            button{
+                border-radius: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                width:100px;
+                font-size:16px;
+                text-align: center;
+                background: transparent;
+                border:2px solid green;
+                color:#E3242B;
+                
+            }button:hover{
+                background-color: green;
+                border:2.5px solid darkblue;
+                color: white;
+                width:120px;
+            }
+            span{
+                color:red;
+            }
+            label{
+                padding-bottom:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <form action = "admin">
+            <h2> Enter Student Details</h2><br>
+            <label ><b>Student's Name<span>*</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" placeholder="enter Student's Name" name="Name" required> 
+            <br><br><br>
+            <label ><b>Student's Username<span>*</span></b>&nbsp;&nbsp;</label>
+            <input type="text" placeholder="enter Student's username" name="UserName" required> 
+            <br><br><br>
+            <label ><b>Student's Roll No.<span>*</span></b>&nbsp;&nbsp;</label>
+            <input type="text" placeholder="enter student's roll no" name="Rollno" pattern="[0-9]{4}" title="Please enter valid 4 digit roll no." required> 
+            <br><br><br>
+            <label ><b>Student's Password<span>*</span></b>&nbsp;&nbsp;</label>
+            <input type="password" placeholder="enter Student's Password" name="Password"   required> 
+            <br><br><br>
+            <label ><b>Student's Email id<span>*</span></b>&nbsp;&nbsp;</label>
+            <input type="Email" placeholder="enter Student's Email" name="Email" required> 
+            <br><br><br>
+            <label ><b>Student's Phone No.<span>*</span></b>&nbsp;&nbsp;</label>
+            <input type="tel" placeholder="enter Student's 10 digit number" name="PhoneNo" pattern="[0-9]{10}" title="Please enter 10 digit number" required> 
+            <br><br><br>
+            <button> submit</button> <br><br>
+            Back? <a href="index4.html">Click here</a>
+        </form>
+        
+        
+        <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" -->
+    </body>
+</html>

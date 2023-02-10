@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body{
+               background-image: url("marks1.jpg");
+               background-repeat: no-repeat; 
+               background-size:  cover;
+            }
+            h2{
+                font-size:25px;
+            }
+            form{
+                text-align:center;
+                 border: 2.5px solid white;
+                 background-color:#00042f;
+                position: relative;
+                color: yellow;
+                margin-left:200px;
+                margin-top:15px;
+                width:550px;
+                padding-top: 10px;
+                padding-bottom: 20px;
+                padding-right: 20px;
+                padding-left: 20px;
+                border-radius: 30px;
+            }
+            input{
+                border-radius: 10px;
+                padding: 5px;
+                text-align: center;
+                width:50px;
+                background: transparent;
+                border:2.5px solid darkblue;
+                color:yellow;
+            } 
+            input:hover{
+                width:55px;
+                border:2.5px solid green;
+            }
+            input:focus{
+                width:60px;
+                border:4px solid green;
+            }   
+            button{
+                border-radius: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                width:90px;
+                text-align: center;
+                background: transparent;
+                border:2px solid green;
+                color:#E3242B;
+            }button:hover{
+                background-color: green;
+                border:2.5px solid darkblue;
+                color: white;
+                width:110px;
+            }
+            span{
+                color:red;
+            }
+            label{
+                padding-bottom:10px;
+            }h1{
+                color:yellowgreen;
+                text-shadow: 1px 1px black;
+            }
+        </style>
+
+   
+    </head>
+    <body>
+        <form action="marks" name="marks">
+            <h1> Enter Students Marks </h1>
+             <label ><b>Fundamental of Algorithms  <span>*</span></b>&nbsp;&nbsp;&nbsp;</label>
+            
+            <input id="foa" type="text" placeholder=" marks " pattern="[0-9]{1,3}" name="foa" required> <label>/100</label>
+            <br><br>
+           <label ><b>&emsp;&emsp;&nbsp;&nbsp;&nbsp;Advance Java  <span>*</span></b>&emsp;&emsp;&emsp;&emsp;</label>
+            
+            <input id="java" type="text" placeholder=" marks " pattern="[0-9]{1,3}" name="java" required> <label>/100</label>
+            <br><br>
+            <label ><b>&nbsp;&emsp;&nbsp;Computer Networks  <span>*</span></b>&nbsp;&nbsp;&emsp;&emsp;</label>
+            
+            <input id="cn" type="text" placeholder=" marks " pattern="[0-9]{1,3}" name="cn" required> <label>/100</label>
+            <br><br>
+            <label ><b>&emsp;&nbsp;Software Engineering <span>*</span></b>&nbsp;&nbsp;&nbsp;&nbsp;&emsp;</label>
+            
+            <input id="se" type="text" placeholder=" marks " pattern="[0-9]{1,3}" name="se" required> <label>/100</label>
+            <br><br>
+            <label ><b>&nbsp;&emsp;&nbsp;&emsp;&nbsp;Linear Algebra<span>*</span></b>&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;</label>
+            
+            <input id="la" type="text" placeholder=" marks " pattern="[0-9]{1,3}" name="la" required> <label>/100</label>
+            <br><br>
+            <label ><b>&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&nbsp;DotNet <span>*</span></b>&nbsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&emsp;</label>
+            <input id="dotnet" type="text" placeholder=" marks " pattern="[0-9]{1,3}" name="dotnet" required> <label>/100</label>
+            <br><br>
+            <label ><b>&nbsp;&emsp;&nbsp;Android Development <span>*</span></b>&nbsp;&emsp;&emsp;</label>
+            
+            <input id="android" type="text" placeholder=" marks " pattern="[0-9]{1,3}" name="android" required> <label>/100</label>
+            <br><br>
+            
+            <button id="btn">submit </button>
+        </form>
+        
+        
+        
+    </body>
+</html>
